@@ -57,6 +57,9 @@ button:hover {
 .main-head {
   background: #131c27;
   color: white;
+  z-index: 3;
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -85,7 +88,7 @@ nav li {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
     url('/TravelWebsite/img/landing-page.jpg');
   min-height: 90vh;
   background-repeat: no-repeat;
@@ -280,7 +283,10 @@ footer {
   align-items: center;
 }
 
-.footer-wraper li {
+button:focus {
+  background: #27394e;
+  outline-style: solid;
+  outline-color: white;
 }
 
 /* Media Queries */
